@@ -1,8 +1,16 @@
+import {Routes, Route} from 'react-router-dom';
+
+import NavBar from "./components/navbar/NavBar";
+import HomePage from "./components/home/HomePage";
+
 function App() {
   return (
-    <div>
-      <h1>Welcome to "Pick It Up" project</h1>
-    </div>
+    <>
+      <NavBar />
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+      </Routes>
+    </>
   );
 }
 
