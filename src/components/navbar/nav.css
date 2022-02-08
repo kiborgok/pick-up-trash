@@ -36,3 +36,8 @@ nav {
     padding: 10px 20px;
     border-radius: 5px;
 }
+
+.login-btn:hover,
+.register-btn:hover {
+    background-color: #8785ff;
+}
