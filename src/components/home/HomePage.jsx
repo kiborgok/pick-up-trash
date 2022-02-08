@@ -7,7 +7,9 @@ function HomePage() {
       <p>We are here to help you dispose it !</p>
       <div className="searchBar">
         <input type="text" name="search" id="search" placeholder="Enter your Location" />
-        <button type="submit">Search</button>
+        <button className="searchBtn" type="submit">
+          Search
+        </button>
       </div>
     </section>
   );
