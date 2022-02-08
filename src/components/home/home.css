@@ -1,24 +1,24 @@
 .banner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: url(/public/bgImage.jpg);
-    height: 85vh;
-    background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/public/bgImage.jpg);
+  height: 85vh;
+  background-size: cover;
 }
 
 .banner h2 {
-    color: #e5e5e5;
-    font-family: "Abril Fatface", cursive;
-    font-size: 4em;
-    font-weight: 300;
+  color: #e5e5e5;
+  font-family: "Abril Fatface", cursive;
+  font-size: 4em;
+  font-weight: 300;
 }
 
 .banner p {
-    color: #e5e5e5;
-    font-weight: 700;
-    font-size: 2.2em;
-    max-width: 40vw;
-    text-align: center;
+  color: #e5e5e5;
+  font-weight: 700;
+  font-size: 2.2em;
+  max-width: 40vw;
+  text-align: center;
 }
