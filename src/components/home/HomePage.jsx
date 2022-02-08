@@ -1,8 +1,7 @@
+import "./home.css";
 
-function HomePage(){
-    return(
-        <h2>Home Page</h2>
-    );
+function HomePage() {
+  return <h2>Home Page</h2>;
 }
 
-export default HomePage
+export default HomePage;
