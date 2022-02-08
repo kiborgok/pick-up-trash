@@ -1,5 +1,14 @@
 .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-image: url(/public/bgImage.jpg);
     height: 100vh;
     background-size: cover;
+}
+
+.banner h2 {
+    color: #e5e5e5;
+    font-family: "Abril Fatface", cursive;
 }
