@@ -1,0 +1,5 @@
+.banner {
+    background-image: url(/public/bgImage.jpg);
+    height: 100vh;
+    background-size: cover;
+}
