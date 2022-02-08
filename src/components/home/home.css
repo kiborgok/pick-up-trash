@@ -14,3 +14,11 @@
     font-size: 4em;
     font-weight: 300;
 }
+
+.banner p {
+    color: #e5e5e5;
+    font-weight: 700;
+    font-size: 2.2em;
+    max-width: 40vw;
+    text-align: center;
+}
