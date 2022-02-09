@@ -1,34 +1,43 @@
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: maroon;
-    color: white;
+    background-color: #492020;
+    color: #e5e5e5;
     font-size: 18px;
 }
 
-.logo > p{
-    font-weight: bold;
+.logo > p {
+    font-weight: 600;
+    font-family: "Concert One", cursive;
+    font-size: 1.8em;
 }
 
-.links{
+.links {
     display: flex;
 }
 
-.links > li{
+.links > li {
     list-style: none;
     margin: 10px;
     padding: 5px;
+    font-size: 0.8em;
+    font-weight: 600;
 }
 
-.link{
+.link {
     text-decoration: none;
-    color: white;
+    color: #e5e5e5;
 }
 
-.login-btn, .register-btn{
-    background-color: #6E6BFF;
+.login-btn,
+.register-btn {
+    background-color: #6e6bff;
     padding: 10px 20px;
     border-radius: 5px;
 }
 
+.login-btn:hover,
+.register-btn:hover {
+    background-color: #8785ff;
+}
