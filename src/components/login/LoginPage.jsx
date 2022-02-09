@@ -13,7 +13,7 @@ function LoginPage(){
             <label>Password</label><br/>
             <input type="password" />
           </div>
-        <button type='submit' className='login-btn'>Login</button>
+        <button type='submit' className='login-submit-btn'>Login</button>
         </form>
       </div>
     );
