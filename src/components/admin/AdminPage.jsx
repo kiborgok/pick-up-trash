@@ -3,7 +3,7 @@ import './admin.css';
 import {useState} from 'react';
 
 function AdminPage(){
-    let users = [
+    let clients = [
         {
             id: 1,
             name: "Alex kiborgok",
@@ -54,10 +54,13 @@ function AdminPage(){
         }
     ]
 
-    const [user, setSelection] = useState();
-
+    const [users, setUsers] = useState(clients);
+    
+    //Delete client from clients table function
     let deleteUser = (userId) => {
-        console.log(userId)
+        let newUserList = users.filter(user => user.id !== userId);
+        setUsers(newUserList)
+
     }
     return(
         <div className='container'>
