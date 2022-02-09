@@ -28,8 +28,8 @@ function AdminPage(){
             email: "joylene@gmail.com",
             isTrashPicker: false
         },
-               {
-                   id: 4,
+        {
+            id: 4,
             name: "Collins Odinga",
             residence: "Anonymous",
             mobile: "0712345678",
