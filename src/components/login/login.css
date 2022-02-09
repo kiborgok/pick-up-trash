@@ -1,0 +1,26 @@
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid grey;
+    margin-top: 50px;
+}
+
+form > div{
+    margin: 10px;
+}
+
+form > div > label{
+    margin: 5px
+}
+
+.login-btn{
+    background-color: purple;
+
+}
