@@ -1,66 +1,37 @@
-import './account.css';
-import {useState} from 'react';
+import "./account.css";
+import { useState } from "react";
+// import {FontAwesomeIcon} from '@https://fontawesome.com/icons/github?s=brands';
 
-function AccountPage(){
-    return(
-<div className="container">
-<div class="Acc-form">
-<h2>Account Page</h2>
-  <form>
-    <p>Name</p> 
-    <input type="text" placeholder="Enter Name" name="name" required></input>
-
-    <p>Phone No:</p>
-        <input type="Phone No" placeholder="Enter Phone No" name="Phone" required></input>
+function AccountPage() {
+  return (
     
-    <p>Residence</p>
-        <input type="Residence" placeholder="Enter Residence" name="Residence" required></input>
+    <div className="container">
+        {/* <FontAwesomeIcon icon="fa-brands fa-github" /> */}
+        <h2>Account Page:</h2>
+      <div class="Acc-form">
+        <img src="" alt="" />
+        <form>
+          <div className="name">
+            <label>Name:</label>
+            <input type="text" name="name" />
+          </div>
+          <div className="PhoneNo">
+            <label>Phone No:</label>
+            <input type="text" name="PhoneNo" />
+          </div>
+          <div className="Residence">
+            <label>Residence:</label>
+            <input type="text" name="Residence" />
+          </div>
+          <div className="Email">
+            <label>Email:</label>
+            <input type="text" name="Email" />
+          </div>
 
-    <p>Email</p>
-        <input type="Email" placeholder="Enter Email" name="Email" required></input>
-
-    {/* <button type="submit" class="btn">Submit</button> */}
-  </form>
-</div>
-</div>
-    )
+          {/* <button type="submit" class="btn">Submit</button> */}
+        </form>
+      </div>
+    </div>
+  );
 }
-
-
-// class Form extends Component{
-//     constructor(props) {
-//         super(props)
-//         this.state = {
-//             Name: "",
-//             PhoneNo:"",
-//             Residence:"",
-//             Email:"",
-//         }
-//         this.handleSubmit=this.handleSubmit.bind(this)
-//     }
-//     namehandler = (event) =>{
-//         this.setState({
-//             name: event.target.value
-//         })
-//     }
-//     phonehandler = (event) =>{
-//             this.setState({
-//                 phoneNo: event.target.value
-//             })
-//     }
-//     residencehandler = (event) =>{
-//                 this.setState({
-//                     residence: event.target.value
-//                 })
-//     }
-//     emailhandler = (event) =>{
-//                     this.setState({
-//                         email: event.target.value
-//                     })
-//     }
-// }
-//         handleSubmit = (event) => {
-//             alert
-//         }
-
 export default AccountPage;
