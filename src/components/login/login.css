@@ -2,25 +2,42 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
+    background-image: url(/public/bgImage.jpg);
+    height: 85vh;
+    background-size: cover;
+    }
 
 form{
     display: flex;
+    align-items: center;
     flex-direction: column;
     padding: 20px;
     border: 1px solid grey;
     margin-top: 50px;
+    width: 35%;
+    border-radius: 20px;
+    opacity: 0.8;
 }
 
 form > div{
     margin: 10px;
+    width: 70%;
 }
 
-form > div > label{
-    margin: 5px
+label{
+    color: white;
 }
 
-.login-btn{
+form > div > input{
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background-color: #C4C4C4;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.login-submit-btn{
     background-color: purple;
 
 }
