@@ -1,6 +1,21 @@
+import './login.css';
+
 function LoginPage(){
-    return(
-        <h2>Login Page</h2>
+    return (
+      <div className="form-container">
+        <form>
+            <h2>Login</h2>
+          <div>
+            <label>Phone Number</label><br/>
+            <input type="text" placeholder="0722 xxx xxx"/>
+          </div>
+          <div>
+            <label>Password</label><br/>
+            <input type="password" />
+          </div>
+        <button type='submit' className='login-btn'>Login</button>
+        </form>
+      </div>
     );
 }
 
