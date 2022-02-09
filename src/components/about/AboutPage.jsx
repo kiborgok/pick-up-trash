@@ -17,21 +17,20 @@ function AboutPage(){
         <div className="about-boxes">
           <div>
             <FontAwesomeIcon className="recycle" icon={faRecycle} />
+            <h3>Recycling</h3>
+            <p>We connect you to waste recycling companies when you have wastes that can be recycled.</p>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro
-              deleniti numquam expedita cumque accusantium iusto magnam, nemo in
-              quam amet aliquam ea ut quasi dolore placeat? Labore dolores error
-              necessitatibus.
+            Recycling of waste material means taking the materials and transforming them into new products.
             </p>
           </div>
           <div>
             <FontAwesomeIcon className="recycle" icon={faTruck} />
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro
-              deleniti numquam expedita cumque accusantium iusto magnam, nemo in
-              quam amet aliquam ea ut quasi dolore placeat? Labore dolores error
-              necessitatibus.
-            </p>
+            <h3>Garbage Collection and Disposal</h3>
+            <p>We connect You to Garbage Disposers, or Garbage owners incase you are a
+               Garbage Collection company  </p>
+            <p>We have several registered Garbage collector across the city who can pick 
+              the trash on your request at any time of the day</p>
+            <p></p>
           </div>
           <div>
             <FontAwesomeIcon className="recycle" icon={faAnglesRight} />
@@ -43,7 +42,35 @@ function AboutPage(){
             </p>
           </div>
         </div>
+        <div className="reviews">
+          <div id="client">
+            <img src="" alt="client" />
+            <h4>John Wick</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse soluta aperiam enim nostrum iusto! Ducimus neque tenetur, temporibus
+               nesciunt molestias harum cum assumenda aperiam eligendi facilis officiis saepe voluptatum dolor.</p>
+          </div>
+          <div id="client">
+            <img src="" alt="client" />
+            <h4>John Wick</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse soluta aperiam enim nostrum iusto! Ducimus neque tenetur, temporibus
+               nesciunt molestias harum cum assumenda aperiam eligendi facilis officiis saepe voluptatum dolor.</p>
+          </div>
+          <div id="client">
+            <img src="" alt="client" />
+            <h4>John Wick</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse soluta aperiam enim nostrum iusto! Ducimus neque tenetur, temporibus
+               nesciunt molestias harum cum assumenda aperiam eligendi facilis officiis saepe voluptatum dolor.</p>
+          </div>
+          <div id="client">
+            <img src="" alt="client" />
+            <h4>John Wick</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse soluta aperiam enim nostrum iusto! Ducimus neque tenetur, temporibus
+               nesciunt molestias harum cum assumenda aperiam eligendi facilis officiis saepe voluptatum dolor.</p>
+          </div>
+        </div>
       </div>
+      
+
     );
 }
 
