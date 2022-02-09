@@ -56,12 +56,22 @@ function AdminPage(){
 
     const [users, setUsers] = useState(clients);
     
-    //Delete client from clients table function
-    let deleteUser = (userId) => {
+    //Function to delete client from users table
+    let handleDelete = (userId) => {
         let newUserList = users.filter(user => user.id !== userId);
         setUsers(newUserList)
 
     }
+
+    //Function to make a user to be a trash picker or not
+    let handleIsTrachPicker = (user) => {
+        let arrayOfUsers = [...users];
+        let index = arrayOfUsers.indexOf(user);
+        arrayOfUsers[index] = {...arrayOfUsers[index]};
+        arrayOfUsers[index].isTrashPicker = !arrayOfUsers[index].isTrashPicker
+        setUsers(arrayOfUsers);
+    }
+
     return(
         <div className='container'>
             <h3>Clients Table</h3>
@@ -92,10 +102,10 @@ function AdminPage(){
                                         <button className='edit'>Edit</button>
                                     </td>
                                     <td>
-                                        <button className='mk-trash-p'>Make trash picker</button>
+                                        <button className='mk-trash-p' onClick={() => handleIsTrachPicker(user)}>Make trash picker</button>
                                     </td>
                                       <td>
-                                        <button className='delete' onClick={() => deleteUser(user.id)}>Delete</button>
+                                        <button className='delete' onClick={() => handleDelete(user.id)}>Delete</button>
                                     </td>
                                 </tr>
                             )
