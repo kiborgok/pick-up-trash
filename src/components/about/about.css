@@ -34,8 +34,26 @@
 .about-boxes > div > p{
     text-align: center;
 }
-
+.about-boxes > div > h3{
+    text-align: center;
+}
 .recycle{
     color: purple;
     font-size: 50px;
+}
+.reviews{
+    background-color: #492020;
+    display: flex;
+}
+#client{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    border: 2px solid grey;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    align-content: center;
+    text-align: center;
 }
