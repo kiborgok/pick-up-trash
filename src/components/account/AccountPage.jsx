@@ -1,6 +1,6 @@
 import "./account.css";
 import { useState } from "react";
-// import {FontAwesomeIcon} from '@https://fontawesome.com/icons/github?s=brands';
+
 
 function AccountPage() {
   return (
@@ -8,8 +8,10 @@ function AccountPage() {
     <div className="container">
         {/* <FontAwesomeIcon icon="fa-brands fa-github" /> */}
         <h2>Account Page:</h2>
+        <div className="profile-photo">
+          {/* <img src={() => <} /> */}
+        </div>
       <div class="Acc-form">
-        <img src="" alt="" />
         <form>
           <div className="name">
             <label>Name:</label>
