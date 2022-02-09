@@ -42,7 +42,35 @@ function AboutPage(){
             </p>
           </div>
         </div>
+        <div className="reviews">
+          <div id="client">
+            <img src="" alt="client" />
+            <h4>John Wick</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse soluta aperiam enim nostrum iusto! Ducimus neque tenetur, temporibus
+               nesciunt molestias harum cum assumenda aperiam eligendi facilis officiis saepe voluptatum dolor.</p>
+          </div>
+          <div id="client">
+            <img src="" alt="client" />
+            <h4>John Wick</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse soluta aperiam enim nostrum iusto! Ducimus neque tenetur, temporibus
+               nesciunt molestias harum cum assumenda aperiam eligendi facilis officiis saepe voluptatum dolor.</p>
+          </div>
+          <div id="client">
+            <img src="" alt="client" />
+            <h4>John Wick</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse soluta aperiam enim nostrum iusto! Ducimus neque tenetur, temporibus
+               nesciunt molestias harum cum assumenda aperiam eligendi facilis officiis saepe voluptatum dolor.</p>
+          </div>
+          <div id="client">
+            <img src="" alt="client" />
+            <h4>John Wick</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse soluta aperiam enim nostrum iusto! Ducimus neque tenetur, temporibus
+               nesciunt molestias harum cum assumenda aperiam eligendi facilis officiis saepe voluptatum dolor.</p>
+          </div>
+        </div>
       </div>
+      
+
     );
 }
 
