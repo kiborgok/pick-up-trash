@@ -2,57 +2,7 @@ import './admin.css';
 
 import {useState} from 'react';
 
-function AdminPage(){
-    let clients = [
-        {
-            id: 1,
-            name: "Alex kiborgok",
-            residence: "Rimpa",
-            mobile: "0706941217",
-            email: "alex@gmail.com",
-            isTrashPicker: false
-        },
-        {
-            id: 2,
-            name: "Sam Kuria",
-            residence: "Anonymous",
-            mobile: "0712345678",
-            email: "sam@gmail.com",
-            isTrashPicker: false
-        },
-               {
-            id: 3,
-            name: "Joylene Kirui",
-            residence: "Anonymous",
-            mobile: "0712345678",
-            email: "joylene@gmail.com",
-            isTrashPicker: false
-        },
-        {
-            id: 4,
-            name: "Collins Odinga",
-            residence: "Anonymous",
-            mobile: "0712345678",
-            email: "collins@gmail.com",
-            isTrashPicker: false
-        },
-        {
-            id: 5,
-            name: "Kipkoech Sang",
-            residence: "Anonymous",
-            mobile: "0712345678",
-            email: "sang@gmail.com",
-            isTrashPicker: false
-        },
-        {
-            id: 6,
-            name: "Danis Muga",
-            residence: "Anonymous",
-            mobile: "0712345678",
-            email: "alex@gmail.com",
-            isTrashPicker: false
-        }
-    ]
+function AdminPage({clients}){
 
     const [users, setUsers] = useState(clients);
     
