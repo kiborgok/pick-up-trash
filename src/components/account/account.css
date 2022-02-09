@@ -16,5 +16,13 @@
 
     }
     .Acc-form{
-        margin-top: 25%;
+        margin-top: 6%;
+        align-content: center;
     }
+.profile-photo{
+    height: 250px;
+    width: 250px;
+    border-radius: 125px;
+    background-color: lightgray;
+
+}
