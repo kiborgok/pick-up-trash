@@ -22,3 +22,50 @@
   max-width: 40vw;
   text-align: center;
 }
+
+.searchBar {
+  background-color: #e5e5e5;
+  width: 40vw;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+}
+
+.searchBar input {
+  padding: 0.7em;
+  border: none;
+  background-color: #e5e5e5;
+  width: 28vw;
+  padding-top: 0.4em;
+  font-weight: 900;
+}
+
+.searchBar input:focus {
+  outline: none;
+}
+
+.searchBar button {
+  padding: 1em 2em;
+  background-color: #6e6bff;
+  border: none;
+  color: #e5e5e5;
+  font-weight: 900;
+  font-size: 0.9em;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.searchBar button:hover {
+  background-color: #7f7dfc;
+}
+
+.searchIcon {
+  padding-left: 1vw;
+  padding-top: 0.7em;
+  color: #6e6e6e;
+}
+
+.searchArea {
+  display: flex;
+}
