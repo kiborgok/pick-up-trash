@@ -1,4 +1,6 @@
 import "./home.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 function HomePage() {
   return (
@@ -6,7 +8,10 @@ function HomePage() {
       <h2>Choked By Your Trash?</h2>
       <p>We are here to help you dispose it !</p>
       <div className="searchBar">
-        <input type="text" name="search" id="search" placeholder="Enter your Location" />
+        <div className="searchArea">
+          <FontAwesomeIcon className="searchIcon" icon={faSearch} />
+          <input type="text" name="search" id="search" placeholder="Enter your Location" />
+        </div>
         <button className="searchBtn" type="submit">
           Search
         </button>
