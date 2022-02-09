@@ -34,7 +34,9 @@
 .about-boxes > div > p{
     text-align: center;
 }
-
+.about-boxes > div > h3{
+    text-align: center;
+}
 .recycle{
     color: purple;
     font-size: 50px;
