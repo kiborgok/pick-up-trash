@@ -1,19 +1,30 @@
 import './login.css';
 
-function LoginPage(){
+function LoginPage({loginData, handleLogin, handleLoginSubmit}){
     return (
       <div className="form-container">
         <form className='login-form'>
             <h2>Login</h2>
           <div>
             <label>Phone Number</label><br/>
-            <input type="text" placeholder="0722 xxx xxx"/>
+            <input 
+              type="text" 
+              name="phoneNumber" 
+              onChange={handleLogin} 
+              value={loginData.phoneNumber} 
+              placeholder="0722 xxx xxx"
+            />
           </div>
           <div>
             <label>Password</label><br/>
-            <input type="password" />
+            <input 
+              type="password" 
+              onChange={handleLogin} 
+              name='password' 
+              value={loginData.password}
+            />
           </div>
-        <button type='submit' className='login-submit-btn'>Login</button>
+        <button type='submit' onClick={handleLoginSubmit} className='login-submit-btn'>Login</button>
         </form>
       </div>
     );
