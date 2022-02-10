@@ -17,9 +17,9 @@ function App() {
         {
           firstName: "Alex k",
           lastName: "kiborgok",
-          phoneNumber: "0703443334",
+          phoneNumber: "0712345678",
           location: "Nairobi",
-          password: 12345,
+          password: md5(12345),
           isTrashPicker: false,
           isAdmin: true
         }
@@ -32,9 +32,52 @@ function App() {
         location: "",
         confirmPassword: ""
     }
-
+    let [user, setApp] = useState({
+      isLoggedIn: false,
+      client: {}
+    })
     let [signUpData, setSignUpData] = useState(initialstate);
+    let [loginData, setLoginData] = useState({phoneNumber: "", password: ""});
     let [users, setUsers] = useState(clients);
+
+    let handleLogin = (e) => {
+      const {name, value} = e.target;
+      setLoginData({
+        ...loginData,
+        [name]:value
+      });
+    }
+
+    let handleLoginSubmit = (e) => {
+      e.preventDefault()
+
+      if(loginData.phoneNumber === ""){
+        alert("Phone number cannot be empty")
+        return
+      }else if(loginData.phoneNumber.length < 10 && loginData.phoneNumber.length > 10){
+        alert("Invalid phone number")
+        return
+      }else if(loginData.password === ""){
+        alert("Password cannot be empty");
+        return
+      }else if(loginData.password.length < 5){
+        alert("Password is too short")
+      }
+
+      let foundUser = users.find(user => user.phoneNumber === loginData.phoneNumber);
+      if(foundUser){
+        if(md5(loginData.password) == foundUser.password){
+          alert("Logged in successfully")
+          setApp({
+            isLoggedIn: true,
+            client: foundUser
+          })
+          return navigate("/");
+        }
+        alert("Incorrect number/password")
+        return
+      }
+    }
 
     let handleChange = (e) => {
         const {name, value} = e.target;
@@ -56,7 +99,10 @@ function App() {
         }else if(signUpData.phoneNumber === ""){
           alert("Phone number cannot be empty")
           return
-        }else if(signUpData.location === ""){
+        }else if(signUpData.phoneNumber.length < 10 && signUpData.phoneNumber.length > 10){
+          alert("Invalid phone number")
+        return
+      }else if(signUpData.location === ""){
           alert("Location cannot be empty")
           return
         }
@@ -69,6 +115,11 @@ function App() {
         }
         else if(signUpData.password !== signUpData.confirmPassword){
           alert("Passwords don't match")
+          return
+        }
+        let findUser = users.find(user => user.phoneNumber === signUpData.phoneNumber)
+        if(findUser){
+          alert(findUser.phoneNumber + " is already registered")
           return
         }
         let usersLength = users.length;
@@ -90,14 +141,14 @@ function App() {
 
   return (
     <>
-      <NavBar />
+      <NavBar user={user} />
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/admin' element={<AdminPage userData={users} />} />
         <Route path='/about' element={<AboutPage />} />
         <Route path='/contact' element={<ContactPage />} />
-        <Route path='/account' element={<AccountPage />} />
-        <Route path='/login' element={<LoginPage />} />
+        <Route path='/account' element={<AccountPage user={user}/>} />
+        <Route path='/login' element={<LoginPage handleLoginSubmit={handleLoginSubmit} handleLogin={handleLogin} loginData={loginData} />} />
         <Route path='/register' element={<SignUpPage signUpData={signUpData} handleChange={handleChange} handleSubmit={handleSubmit} />} />
       </Routes>
     </>
