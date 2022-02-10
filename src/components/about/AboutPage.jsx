@@ -53,7 +53,11 @@ function AboutPage() {
               Keep up with the amazing service as we continue working together!
             </p>
             <div className="rating">
-              <FontAwesomeIcon className="recycle" icon={faRecycle} />
+              <FontAwesomeIcon className="star" icon={faStar} />
+              <FontAwesomeIcon className="star" icon={faStar} />
+              <FontAwesomeIcon className="star" icon={faStar} />
+              <FontAwesomeIcon className="star" icon={faStar} />
+              <FontAwesomeIcon className="star" icon={faStar} />
             </div>
           </div>
           <div>
@@ -63,6 +67,13 @@ function AboutPage() {
               Best service provider in cleaning, garbage collection sanitary services, landscaping
               and fumigation services. They have competent staff. GOOD WORK!
             </p>
+            <div className="rating">
+              <FontAwesomeIcon className="star" icon={faStar} />
+              <FontAwesomeIcon className="star" icon={faStar} />
+              <FontAwesomeIcon className="star" icon={faStar} />
+              <FontAwesomeIcon className="star" icon={faStar} />
+              <FontAwesomeIcon className="star" icon={faStar} />
+            </div>
           </div>
           <div>
             <img src="/person3.jpg" alt="client" />
@@ -71,6 +82,13 @@ function AboutPage() {
               the best company have ever encountered their best services ever. I recommend everyone
               to go for their services. They are the best.
             </p>
+            <div className="rating">
+              <FontAwesomeIcon className="star" icon={faStar} />
+              <FontAwesomeIcon className="star" icon={faStar} />
+              <FontAwesomeIcon className="star" icon={faStar} />
+              <FontAwesomeIcon className="star" icon={faStar} />
+              <FontAwesomeIcon className="star" icon={faStar} />
+            </div>
           </div>
 
           <div>
@@ -80,6 +98,13 @@ function AboutPage() {
               Your services are on a high notch! You just the cleaning company I was looking for.
               Keep up with the amazing service as we continue working together!
             </p>
+            <div className="rating">
+              <FontAwesomeIcon className="star" icon={faStar} />
+              <FontAwesomeIcon className="star" icon={faStar} />
+              <FontAwesomeIcon className="star" icon={faStar} />
+              <FontAwesomeIcon className="star" icon={faStar} />
+              <FontAwesomeIcon className="star" icon={faStar} />
+            </div>
           </div>
         </div>
       </div>
