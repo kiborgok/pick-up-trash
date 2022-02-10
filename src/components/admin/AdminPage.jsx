@@ -31,7 +31,7 @@ function AdminPage({userData}){
                         <th>First Name</th>
                         <th>Last Name</th>
                         <th>Phone Number</th>
-                        <th>Password</th>
+                        <th>Location</th>
                         <th>Trash Picker</th>
                         <th></th>
                         <th></th>
