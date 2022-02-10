@@ -3,7 +3,7 @@ import './login.css';
 function LoginPage(){
     return (
       <div className="form-container">
-        <form>
+        <form className='login-form'>
             <h2>Login</h2>
           <div>
             <label>Phone Number</label><br/>
