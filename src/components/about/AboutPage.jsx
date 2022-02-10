@@ -64,8 +64,8 @@ function AboutPage() {
             <img src="/person2.jpg" alt="client" />
             <h3>John Wick</h3>
             <p>
-              Best service provider in cleaning, garbage collection sanitary services, landscaping
-              and fumigation services. They have competent staff. GOOD WORK!
+              Your services are on a high notch! You just the cleaning company I was looking for.
+              Keep up with the amazing service as we continue working together!
             </p>
             <div className="rating">
               <FontAwesomeIcon className="star" icon={faStar} />
@@ -79,8 +79,8 @@ function AboutPage() {
             <img src="/person3.jpg" alt="client" />
             <h3>John Wick</h3>
             <p>
-              the best company have ever encountered their best services ever. I recommend everyone
-              to go for their services. They are the best.
+              Your services are on a high notch! You just the cleaning company I was looking for.
+              Keep up with the amazing service as we continue working together!
             </p>
             <div className="rating">
               <FontAwesomeIcon className="star" icon={faStar} />
