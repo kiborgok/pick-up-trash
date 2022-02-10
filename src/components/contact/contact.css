@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+.contactcontainer {
+    color: #452121;
+    background-color: #E0E0E0;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.contactcontainer >h2, p{
+    text-align: center;
+}
+.contacts{
+    display: flex;
+    flex-direction: row;
+
+}
