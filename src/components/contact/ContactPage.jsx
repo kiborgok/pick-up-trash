@@ -1,6 +1,18 @@
 import "./contact.css"
+import emailjs from "emailjs-com"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 function ContactPage(){
+    function sendEmail(e) {
+        e.preventDefault();
+
+    emailjs.sendForm('service_h211o5s', 'template_rsaybpf', e.target, 'user_k0bZjq4R0VCGguDF9wOdZ')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+        e.target.reset()
+    }
     return(
      <div className="contactcontainer">
             <h2>Contact Us</h2>
@@ -19,9 +31,29 @@ function ContactPage(){
         </div>
         <div id="message">
             <h2>Leave a Message</h2>
-        
+            <form onSubmit={sendEmail}>
+                    <div className="messageinputs">
+                        <div className="nameholder">
+                            <input type="text" className="form-control" placeholder="Name" name="name"/>
+                        </div>
+                        <div className="locationholder">
+                            <input type="text" className="form-control" placeholder="Location" name="location"/>
+                        </div>
+                        <div className="emailholder">
+                            <input type="email" className="form-control" placeholder="Email Address" name="email"/>
+                        </div>
+                        <div className="phoneholder">
+                            <input type="text" className="form-control" placeholder="Phone Number" name="phone"/>
+                        </div>
+                        <div className="messageholder">
+                            <textarea className="form-control" id="" cols="30" rows="8" placeholder="Your message" name="message"></textarea>
+                        </div>
+                        <div className="submitbutton">
+                            <input type="submit" className="button" value="Send Message"></input>
+                        </div>
+                    </div>
+                </form>
         </div>
-        
      </div>
     );
 }
