@@ -9,10 +9,10 @@ function ContactPage() {
       .sendForm("service_h211o5s", "template_rsaybpf", e.target, "user_k0bZjq4R0VCGguDF9wOdZ")
       .then(
         (result) => {
-          console.log(result.text);
+            alert("Message sent, we'll get back to you soon.");
         },
         (error) => {
-          console.log(error.text);
+            alert("Problem sending your message, try again")
         }
       );
     e.target.reset();
