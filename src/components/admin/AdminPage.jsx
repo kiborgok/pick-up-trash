@@ -2,9 +2,9 @@ import './admin.css';
 
 import {useState} from 'react';
 
-function AdminPage({clients}){
+function AdminPage({userData}){
 
-    const [users, setUsers] = useState(clients);
+    const [users, setUsers] = useState(userData);
     
     //Function to delete client from users table
     let handleDelete = (userId) => {
@@ -28,10 +28,10 @@ function AdminPage({clients}){
             <table>
                 <thead>
                     <tr>
-                        <th>Name</th>
-                        <th>Residence</th>
-                        <th>Mobile</th>
-                        <th>Email</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Phone Number</th>
+                        <th>Location</th>
                         <th>Trash Picker</th>
                         <th></th>
                         <th></th>
@@ -40,13 +40,14 @@ function AdminPage({clients}){
                 </thead>
                 <tbody>
                     {
+                        users.length === 0 ? <tr>No clients available</tr> :
                         users.map(user => {
                             return (
                                 <tr key={user.id}>
-                                    <td>{user.name}</td>
-                                    <td>{user.residence}</td>
-                                    <td>{user.mobile}</td>
-                                    <td>{user.email}</td>
+                                    <td>{user.firstName}</td>
+                                    <td>{user.lastName}</td>
+                                    <td>{user.phoneNumber}</td>
+                                    <td>{user.location}</td>
                                     <td>{user.isTrashPicker ? "True" : "False"}</td>
                                     <td>
                                         <button className='edit'>Edit</button>
