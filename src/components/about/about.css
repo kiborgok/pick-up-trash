@@ -106,3 +106,8 @@
   color: #3b1c1c;
   padding-bottom: 2vh;
 }
+
+.client .rating .star {
+  color: orange;
+  margin-top: 5vh;
+}
