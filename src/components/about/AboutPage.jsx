@@ -4,7 +4,7 @@ import { faRecycle, faTruck, faAnglesRight } from "@fortawesome/free-solid-svg-i
 
 function AboutPage() {
   return (
-    <div className="container">
+    <div className="aboutContainer">
       <div className="about">
         <h2>About Us</h2>
         <p>
@@ -16,7 +16,7 @@ function AboutPage() {
       <div className="about-boxes">
         <div>
           <FontAwesomeIcon className="recycle" icon={faRecycle} />
-          <h3>Recycling</h3>
+          <h3>Recycle</h3>
           <p>
             We connect you to waste recycling companies when you have wastes that can be recycled.
             Recycling of waste material means taking the materials and transforming them into new
