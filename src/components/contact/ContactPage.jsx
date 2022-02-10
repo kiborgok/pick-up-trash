@@ -1,5 +1,5 @@
 import "./contact.css"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 function ContactPage(){
     return(
      <div className="contactcontainer">

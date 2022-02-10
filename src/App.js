@@ -1,4 +1,6 @@
 import {Routes, Route} from 'react-router-dom';
+import {useEffect, useState} from "react";
+import md5 from 'md5';
 
 import NavBar from "./components/navbar/NavBar";
 import HomePage from "./components/home/HomePage";
@@ -9,68 +11,59 @@ import LoginPage from "./components/login/LoginPage";
 import SignUpPage from "./components/signup/SignUpPage";
 import AccountPage from './components/account/AccountPage';
 
-function App(props) {
-      let clients = [
-        {
-            id: 1,
-            name: "Alex kiborgok",
-            residence: "Rimpa",
-            mobile: "0706941217",
-            email: "alex@gmail.com",
-            isTrashPicker: false
-        },
-        {
-            id: 2,
-            name: "Sam Kuria",
-            residence: "Anonymous",
-            mobile: "0712345678",
-            email: "sam@gmail.com",
-            isTrashPicker: false
-        },
-               {
-            id: 3,
-            name: "Joylene Kirui",
-            residence: "Anonymous",
-            mobile: "0712345678",
-            email: "joylene@gmail.com",
-            isTrashPicker: false
-        },
-        {
-            id: 4,
-            name: "Collins Odinga",
-            residence: "Anonymous",
-            mobile: "0712345678",
-            email: "collins@gmail.com",
-            isTrashPicker: false
-        },
-        {
-            id: 5,
-            name: "Kipkoech Sang",
-            residence: "Anonymous",
-            mobile: "0712345678",
-            email: "sang@gmail.com",
-            isTrashPicker: false
-        },
-        {
-            id: 6,
-            name: "Danis Muga",
-            residence: "Anonymous",
-            mobile: "0712345678",
-            email: "alex@gmail.com",
-            isTrashPicker: false
-        }
-    ]
+function App() {
+      let clients = []
+
+
+
+    let initialstate = {
+        firstName: "",
+        lastName: "",
+        phoneNumber: "",
+        location: "",
+        password: "",
+        confirmPassword: ""
+    }
+
+    let [signUpData, setSignUpData] = useState(initialstate);
+    let [users, setUsers] = useState(clients);
+
+    let handleChange = (e) => {
+        const {name, value} = e.target;
+        setSignUpData({
+            ...signUpData,
+            [name]:value
+        });
+    }
+
+    let handleSubmit = (e) => {
+        e.preventDefault();
+        let usersLength = users.length;
+        let newUser = signUpData;
+        newUser.id = usersLength + 1;
+        let hash = md5(newUser.password)
+        newUser.password = hash
+        setUsers([...users, newUser]);
+        setSignUpData(initialstate);
+    }
+
+ 
+
+    useEffect(() => {
+
+    },[users])
+
   return (
     <>
       <NavBar />
       <Routes>
         <Route path='/' element={<HomePage />} />
-        <Route path='/admin' element={<AdminPage {...props} clients={clients} />} />
+        <Route path='/admin' element={<AdminPage userData={users} />} />
         <Route path='/about' element={<AboutPage />} />
         <Route path='/contact' element={<ContactPage />} />
         <Route path='/account' element={<AccountPage />} />
         <Route path='/login' element={<LoginPage />} />
-        <Route path='/register' element={<SignUpPage />} />
+        <Route path='/register' element={<SignUpPage signUpData={signUpData} handleChange={handleChange} handleSubmit={handleSubmit} />} />
       </Routes>
     </>
   );

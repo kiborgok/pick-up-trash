@@ -1,24 +1,6 @@
 import "./signup.css";
-import {useState} from 'react'
 
-function SignUpPage(){
-    let initialstate = {
-        firstName: "",
-        lastName: "",
-        phoneNumber: "",
-        password: "",
-        confirmPassword: ""
-    }
-
-    let [signUpData, setSignUpData] = useState(initialstate);
-
-    let handleChange = (e) => {
-        const {name, value} = e.target;
-        setSignUpData({
-            ...signUpData,
-            [name]:value
-        });
-    }
+function SignUpPage({handleChange, handleSubmit, signUpData}){
 
     return (
       <section className="back">
@@ -69,6 +51,22 @@ function SignUpPage(){
               />
             </div>
             <br />
+
+            <div className="form-inputs">
+              <label htmlFor="location" className="form-label">
+                Location
+              </label>
+              <br />
+              <input
+                id="location"
+                type="text"
+                name="location"
+                className="form-input"
+                placeholder="Location"
+                value={signUpData.location}
+                onChange={handleChange}
+              />
+            </div>
             <div className="form-inputs">
               <label htmlFor="password" className="form-label">
                 Password
@@ -92,7 +90,7 @@ function SignUpPage(){
               <br />
               <input
                 id="confirmPassword"
-                type="confirmPassword"
+                type="password"
                 name="confirmPassword"
                 className="form-input"
                 placeholder="********"
