@@ -19,33 +19,26 @@ function AboutPage() {
           <h3>Recycling</h3>
           <p>
             We connect you to waste recycling companies when you have wastes that can be recycled.
-          </p>
-          <p>
             Recycling of waste material means taking the materials and transforming them into new
             products.
           </p>
         </div>
         <div>
           <FontAwesomeIcon className="recycle" icon={faTruck} />
-          <h3>Garbage Collection and Disposal</h3>
+          <h3>Convenience</h3>
           <p>
             We connect You to Garbage Disposers, or Garbage owners incase you are a Garbage
-            Collection company{" "}
+            Collection company. We have several registered Garbage collector across the city who can
+            pick the trash on your request at any time of the day
           </p>
-          <p>
-            We have several registered Garbage collector across the city who can pick the trash on
-            your request at any time of the day
-          </p>
-          <p></p>
         </div>
         <div>
           <FontAwesomeIcon className="recycle" icon={faAnglesRight} />
+          <h3>Fast</h3>
           <p>
             Modern garbage disposals boast several innovative features that disposals of yesteryear
             did not have. These include technologies to drastically reduce noise while in use,
-            resulting in a surprisingly quiet appliance, and removable splash guards, for the
-            purposes of cleaning. Other features include blades that are resistant to both jamming
-            and corrosion and simple integration with dishwashers.
+            resulting in a surprisingly quiet appliance.
           </p>
         </div>
       </div>
