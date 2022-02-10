@@ -1,6 +1,8 @@
-.container {
+.aboutContainer {
   display: flex;
   flex-direction: column;
+  background-color: #ccc;
+  height: auto;
 }
 .about {
   text-align: center;
@@ -9,47 +11,58 @@
 }
 
 .about h2 {
-  font-size: 2.4em;
+  font-size: 3.4em;
   margin-bottom: 5vh;
+  color: #452121;
+  font-weight: 700;
 }
 
 .about > p {
   padding: 0 10vw;
-  font-size: 0.8em;
+  font-size: 1em;
+  font-weight: 600;
+  color: rgb(31, 31, 31);
 }
 
 .about-boxes {
   display: flex;
   justify-content: space-around;
+  margin: 8%;
 }
 
 .about-boxes > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 2px solid grey;
-  margin: 10px;
-  padding: 10px;
+  border: 1px solid rgb(54, 52, 52);
+  margin-left: 5vw;
+  padding: 2vw;
   border-radius: 10px;
-  width: fit-content;
+  width: 25vw;
 }
 
 .about-boxes > div > p {
-  text-align: center;
-  font-size: 0.6em;
+  font-size: 0.8em;
   font-weight: 500;
-  max-width: 20vw;
+  color: #2e1414;
+  padding-bottom: 2vh;
+  font-weight: 500;
 }
+
 .about-boxes > div > h3 {
   text-align: center;
   max-width: 20vw;
+  font-size: 2em;
+  color: #3b1c1c;
+  padding-bottom: 2vh;
 }
 .recycle {
-  color: purple;
-  font-size: 50px;
+  color: rgb(109, 46, 109);
+  font-size: 5em;
+  padding-bottom: 2vh;
 }
 .reviews {
-  background-color: #492020;
+  background-color: #2e1414;
   display: flex;
   flex-direction: column;
 }
