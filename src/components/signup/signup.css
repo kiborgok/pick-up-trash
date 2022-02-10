@@ -63,18 +63,7 @@
 .form-input-login{
   margin-bottom:20px;
 }
-
-.l-btn{
-  margin-left:15px;
-  padding:5px;
-  width:60px;
-  background-color: maroon;
-  border-radius: 5px;
-  border: none;
- 
-}
-
-.l-btn > a{
-  text-decoration: none;
-   color: white;
+button{
+  width:90px;
+  
 }

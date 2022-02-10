@@ -1,6 +1,6 @@
 import "./about.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faRecycle, faTruck, faAnglesRight } from "@fortawesome/free-solid-svg-icons";
+import { faRecycle, faTruck, faAnglesRight, faStar } from "@fortawesome/free-solid-svg-icons";
 
 function AboutPage() {
   return (
@@ -44,41 +44,67 @@ function AboutPage() {
       </div>
       <div className="reviews">
         <h2>Client Reviews</h2>
-        <div id="client">
+        <div className="client">
           <div>
-            <img src="" alt="client" />
-            <h4>John Wick</h4>
+            <img src="/person1.jpg" alt="client" />
+            <h3>John Wick</h3>
             <p>
               Your services are on a high notch! You just the cleaning company I was looking for.
-              Keep up with the amazing service as we continue working together!{" "}
+              Keep up with the amazing service as we continue working together!
             </p>
+            <div className="rating">
+              <FontAwesomeIcon className="star" icon={faStar} />
+              <FontAwesomeIcon className="star" icon={faStar} />
+              <FontAwesomeIcon className="star" icon={faStar} />
+              <FontAwesomeIcon className="star" icon={faStar} />
+              <FontAwesomeIcon className="star" icon={faStar} />
+            </div>
           </div>
           <div>
-            <img src="" alt="client" />
-            <h4>John Wick</h4>
+            <img src="/person2.jpg" alt="client" />
+            <h3>John Wick</h3>
             <p>
-              Best service provider in cleaning, garbage collection sanitary services, landscaping
-              and fumigation services. They have competent staff, and utilize flexibility and
-              incentives which reinforce quality and efficiency. GOOD WORK!
+              Your services are on a high notch! You just the cleaning company I was looking for.
+              Keep up with the amazing service as we continue working together!
             </p>
+            <div className="rating">
+              <FontAwesomeIcon className="star" icon={faStar} />
+              <FontAwesomeIcon className="star" icon={faStar} />
+              <FontAwesomeIcon className="star" icon={faStar} />
+              <FontAwesomeIcon className="star" icon={faStar} />
+              <FontAwesomeIcon className="star" icon={faStar} />
+            </div>
           </div>
           <div>
-            <img src="" alt="client" />
-            <h4>John Wick</h4>
+            <img src="/person3.jpg" alt="client" />
+            <h3>John Wick</h3>
             <p>
-              the best company have ever encountered their best services ever. I recommend everyone
-              to go for their services. They are the best.
+              Your services are on a high notch! You just the cleaning company I was looking for.
+              Keep up with the amazing service as we continue working together!
             </p>
+            <div className="rating">
+              <FontAwesomeIcon className="star" icon={faStar} />
+              <FontAwesomeIcon className="star" icon={faStar} />
+              <FontAwesomeIcon className="star" icon={faStar} />
+              <FontAwesomeIcon className="star" icon={faStar} />
+              <FontAwesomeIcon className="star" icon={faStar} />
+            </div>
           </div>
 
           <div>
-            <img src="" alt="client" />
-            <h4>John Wick</h4>
+            <img src="/person4.jpg" alt="client" />
+            <h3>John Wick</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse soluta aperiam enim
-              nostrum iusto! Ducimus neque tenetur, temporibus nesciunt molestias harum cum
-              assumenda aperiam eligendi facilis officiis saepe voluptatum dolor.
+              Your services are on a high notch! You just the cleaning company I was looking for.
+              Keep up with the amazing service as we continue working together!
             </p>
+            <div className="rating">
+              <FontAwesomeIcon className="star" icon={faStar} />
+              <FontAwesomeIcon className="star" icon={faStar} />
+              <FontAwesomeIcon className="star" icon={faStar} />
+              <FontAwesomeIcon className="star" icon={faStar} />
+              <FontAwesomeIcon className="star" icon={faStar} />
+            </div>
           </div>
         </div>
       </div>

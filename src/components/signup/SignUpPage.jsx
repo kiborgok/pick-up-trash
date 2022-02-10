@@ -1,51 +1,75 @@
 import "./signup.css";
+import {useNavigate } from 'react-router-dom';
 
-function SignUpPage(){
+function SignUpPage({handleChange, handleSubmit, signUpData}){
+    let navigate = useNavigate()
     return (
       <section className="back">
           <form className="register-form">
             <h2>Signup Page</h2>
             <div className="form-inputs">
-              <label htmlFor="username" className="form-label">
+              <label htmlFor="firstName" className="form-label">
                 First Name:
               </label>
               <input
-                id="username"
+                id="firstName"
                 type="text"
-                name="username"
+                name="firstName"
                 className="form-input"
                 placeholder="First Name"
+                value={signUpData.firstName}
+                onChange={handleChange}
               />
             </div>
             <div className="form-inputs">
-              <label htmlFor="username" className="form-label">
+              <label htmlFor="lastName" className="form-label">
                 Last Name:
               </label>
               <input
-                id="username"
+                id="lastName"
                 type="text"
-                name="username"
+                name="lastName"
                 className="form-input"
-                placeholder="Second Name"
+                placeholder="Last Name"
+                value={signUpData.lastName}
+                onChange={handleChange}
               />
             </div>
             <br />
             <div className="form-inputs">
-              <label htmlFor="number" className="form-label">
+              <label htmlFor="phoneNumber" className="form-label">
                 Phone Number
               </label>
               <br />
               <input
-                id="number"
+                id="phoneNumber"
                 type="number"
-                name="number"
+                name="phoneNumber"
                 className="form-input"
                 placeholder="0722 XXX XXX"
+                value={signUpData.phoneNumber}
+                onChange={handleChange}
               />
             </div>
             <br />
+
             <div className="form-inputs">
-              <label htmlFor="Password" className="form-label">
+              <label htmlFor="location" className="form-label">
+                Location
+              </label>
+              <br />
+              <input
+                id="location"
+                type="text"
+                name="location"
+                className="form-input"
+                placeholder="Location"
+                value={signUpData.location}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="form-inputs">
+              <label htmlFor="password" className="form-label">
                 Password
               </label>
               <br />
@@ -55,33 +79,37 @@ function SignUpPage(){
                 name="password"
                 className="form-input"
                 placeholder="********"
+                value={signUpData.password}
+                onChange={handleChange}
               />
             </div>
             <br />
             <div className="form-inputs">
-              <label htmlFor="password2" className="form-label">
+              <label htmlFor="confirmPassword" className="form-label">
                 Confirm password
               </label>
               <br />
               <input
-                id="password2"
+                id="confirmPassword"
                 type="password"
-                name="password2"
+                name="confirmPassword"
                 className="form-input"
                 placeholder="********"
+                value={signUpData.confirmPassword}
+                onChange={handleChange}
               />
             </div>
             <br />
             <div className="form-inputs">
-              <button className="form-input-btn" type="submit">
+              <button className="form-input-btn" type="submit" onClick={handleSubmit}>
                 Sign Up
               </button>
             </div>
             <br />
             <span className="form-input-login">
               Already have an account?
-              <button className="l-btn">
-                <a href="/login">Login</a>
+              <button className="l-btn" onClick={() => navigate("/login")}>
+                Login
               </button>
             </span>
           </form>

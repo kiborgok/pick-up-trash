@@ -8,16 +8,25 @@
     color: #452121;
     background-color: #E0E0E0;
     background-size: cover;
-    height: 100%;
-    width: 100%;
-    display: flex;
+
+
+}
+#messageheader{
+    margin-top: 10px;
+    text-align: center;
     flex-direction: column;
 }
-.contactcontainer >h2, p{
-    text-align: center;
-}
-.contacts{
+#contacts{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    margin-top: 15px;
 
+}
+#iconic{
+    flex-direction: column;
+}
+
+.button{
+    background-color: green;
 }
