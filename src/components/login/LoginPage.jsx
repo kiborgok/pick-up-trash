@@ -8,7 +8,7 @@ function LoginPage({loginData, handleLogin, handleLoginSubmit}){
           <div>
             <label>Phone Number</label><br/>
             <input 
-              type="text" 
+              type="number" 
               name="phoneNumber" 
               onChange={handleLogin} 
               value={loginData.phoneNumber} 

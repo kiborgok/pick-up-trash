@@ -125,6 +125,7 @@ function App() {
         let usersLength = users.length;
         let newUser = signUpData;
         newUser.id = usersLength + 1;
+        newUser.isAdmin = false;
         let hash = md5(newUser.password)
         newUser.password = hash
         setUsers([...users, newUser]);
