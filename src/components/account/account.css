@@ -5,6 +5,7 @@
     margin-top: 10px;
     text-align: right;
     font-size: 25px;
+    
 }
 input{
         margin-bottom: 20px;
@@ -12,25 +13,30 @@ input{
         height: 40px;
         width: 400px;
         border: white;
-
-
 }
-    .Acc-form label{
-        margin-top: 6%;
+.Acc-form label{
+        margin-top: 2%;
         align-content: center;
         color: black;
         margin-right: 10px;
+        display: inline-block;
 }
-.Acc-form{
-    margin-top: 20px;
+.container > .Acc-form{
+    margin-top: 10px;
     margin-left: 10px;
+    /* text-align: center; */
 }
+.Acc-form {
+        margin-top: 1vh;
+        margin-right: 10vw;
+} 
 .profile-photo{
     height: 250px;
     width: 250px;
     border-radius: 125px;
     background-color: lightgray;
-    justify-content: center;
+    text-align: center;
+    
 }
 .Acc-form > .btn{
     width: 75%;
@@ -39,6 +45,5 @@ input{
     border: none;
     justify-content: center;
     background-color: #6e6bff;
-    margin-left: 20%;
     font-size: 20px;
 }
