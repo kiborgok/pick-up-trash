@@ -1,32 +1,59 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    
-}
 .contactcontainer {
-    color: #452121;
-    background-color: #E0E0E0;
-    background-size: cover;
-
-
+  color: #452121;
+  background-color: #e0e0e0;
+  background-size: cover;
+  padding: 10vh;
 }
-#messageheader{
-    margin-top: 10px;
-    text-align: center;
-    flex-direction: column;
-}
-#contacts{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 15px;
-
-}
-#iconic{
-    flex-direction: column;
+#messageheader {
+  margin-top: 10px;
+  text-align: center;
+  flex-direction: column;
 }
 
-.button{
-    background-color: green;
+#messageheader h2 {
+  font-size: 3.4em;
+  margin-bottom: 5vh;
+  color: #452121;
+  font-weight: 700;
+}
+
+#messageheader p {
+  padding: 0 10vw;
+  font-size: 1em;
+  font-weight: 600;
+  color: rgb(31, 31, 31);
+}
+
+#contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 9vh;
+}
+#iconic {
+  flex-direction: column;
+}
+
+.message h4 {
+  margin-bottom: 2vh;
+}
+
+.messageholder textarea {
+  border: none;
+  padding-top: 5px;
+  width: 30vw;
+}
+
+.button {
+  margin-top: 2vh;
+  background-color: #6e6bff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #e0e0e0;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.button:hover {
+  background-color: #8785ff;
 }
