@@ -1,7 +1,8 @@
 import "./signup.css";
+import {useNavigate } from 'react-router-dom';
 
 function SignUpPage({handleChange, handleSubmit, signUpData}){
-
+    let navigate = useNavigate()
     return (
       <section className="back">
           <form className="register-form">
@@ -107,8 +108,8 @@ function SignUpPage({handleChange, handleSubmit, signUpData}){
             <br />
             <span className="form-input-login">
               Already have an account?
-              <button className="l-btn">
-                <a href="/login">Login</a>
+              <button className="l-btn" onClick={() => navigate("/login")}>
+                Login
               </button>
             </span>
           </form>
