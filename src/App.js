@@ -17,7 +17,8 @@ function App(props) {
             residence: "Rimpa",
             mobile: "0706941217",
             email: "alex@gmail.com",
-            isTrashPicker: false
+            isTrashPicker: false,
+            password: "alex"
         },
         {
             id: 2,
@@ -60,6 +61,8 @@ function App(props) {
             isTrashPicker: false
         }
     ]
+
+    
   return (
     <>
       <NavBar />
