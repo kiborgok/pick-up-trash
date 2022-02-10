@@ -15,10 +15,14 @@ function ContactPage(){
     }
     return(
      <div className="contactcontainer">
+          <div id="messageheader">
             <h2>Contact Us</h2>
             <p>For any inquires of communication, you can
                  reach through the contacts below leave a message</p>
-            <div id="contacts">
+          </div>
+
+     <div id="contacts">
+         <div id="iconic">
         <div id="mobile">
             <p>Mobile: +254 111 222 333</p>
         </div>
@@ -29,9 +33,10 @@ function ContactPage(){
             <p>P.O Box: 111 Nairobi.</p>
         </div>  
         </div>
-        <div id="message">
-            <h2>Leave a Message</h2>
+        <div className="message">
+           
             <form onSubmit={sendEmail}>
+            <h4>Leave a Message</h4>
                     <div className="messageinputs">
                         <div className="nameholder">
                             <input type="text" className="form-control" placeholder="Name" name="name"/>
@@ -53,6 +58,7 @@ function ContactPage(){
                         </div>
                     </div>
                 </form>
+        </div>
         </div>
      </div>
     );
