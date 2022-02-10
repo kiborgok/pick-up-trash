@@ -19,6 +19,7 @@
 
 .about-boxes{
     display: flex;
+    justify-content: space-around;
 }
 
 .about-boxes > div{
@@ -29,6 +30,7 @@
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
+    
 }
 
 .about-boxes > div > p{
@@ -44,10 +46,18 @@
 .reviews{
     background-color: #492020;
     display: flex;
-}
-#client{
-    display: flex;
     flex-direction: column;
+}
+.reviews > h2{
+    text-align: center;
+    color: white;
+   
+}
+#client {
+    display: flex;
+}
+#client > div{
+    flex-direction: flex;
     justify-content:center;
     border: 2px solid grey;
     margin: 10px;
