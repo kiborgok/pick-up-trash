@@ -1,3 +1,31 @@
+# Portfolio
+ 
+ ##### By Alex Kiborgok Kiprono
+ ## Contributors
+ 1. Collins Netia Odinga
+ 2. Sam Kuria
+ 3. Danis muga
+ 4. Joylene Kirui
+ 5. Kipkoech Sang Ian
+ 
+  
+ ## Table of Content
+ 
+ + [Description](#description)
+ + [Installation Requirement](#Installation)
+ + [Technology Used](#technology-used)
+ + [Reference](#reference)
+
+  ## Description
+ This  website shows a joint collaboration, portfolio/resume.It contains all background information and  work.
+
+ ## Installation
+ 
+ ### Requirements
+ 
+ * Either a computer,phone,tablet or an Ipad
+ 
+ * An access to the Internet
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
