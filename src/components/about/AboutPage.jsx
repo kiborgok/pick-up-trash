@@ -47,7 +47,7 @@ function AboutPage() {
         <div className="client">
           <div>
             <img src="/person1.jpg" alt="client" />
-            <h3>John Wick</h3>
+            <h3>Don Quixote</h3>
             <p>
               Your services are on a high notch! You just the cleaning company I was looking for.
               Keep up with the amazing service as we continue working together!
@@ -62,7 +62,7 @@ function AboutPage() {
           </div>
           <div>
             <img src="/person2.jpg" alt="client" />
-            <h3>John Wick</h3>
+            <h3>Elizabeth Bennet</h3>
             <p>
               Your services are on a high notch! You just the cleaning company I was looking for.
               Keep up with the amazing service as we continue working together!
@@ -77,7 +77,7 @@ function AboutPage() {
           </div>
           <div>
             <img src="/person3.jpg" alt="client" />
-            <h3>John Wick</h3>
+            <h3>Walter White</h3>
             <p>
               Your services are on a high notch! You just the cleaning company I was looking for.
               Keep up with the amazing service as we continue working together!
@@ -93,7 +93,7 @@ function AboutPage() {
 
           <div>
             <img src="/person4.jpg" alt="client" />
-            <h3>John Wick</h3>
+            <h3>Keith Beck</h3>
             <p>
               Your services are on a high notch! You just the cleaning company I was looking for.
               Keep up with the amazing service as we continue working together!
