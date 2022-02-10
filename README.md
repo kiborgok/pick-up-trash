@@ -6,7 +6,7 @@
  2. Sam Kuria
  3. Danis muga
  4. Joylene Kirui
- 5. Kipkoech Sang
+ 5. Kipkoech Sang Ian
  
   
  ## Table of Content
@@ -17,7 +17,7 @@
  + [Reference](#reference)
 
   ## Description
- This is  website shows a joint collaboration, portfolio/resume.It contains all background information and  work.
+ This  website shows a joint collaboration, portfolio/resume.It contains all background information and  work.
 
  ## Installation
  
