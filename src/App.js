@@ -1,4 +1,4 @@
-import {Routes, Route} from 'react-router-dom';
+import {Routes, Route, useNavigate } from 'react-router-dom';
 import {useEffect, useState} from "react";
 import md5 from 'md5';
 
@@ -12,16 +12,24 @@ import SignUpPage from "./components/signup/SignUpPage";
 import AccountPage from './components/account/AccountPage';
 
 function App() {
-      let clients = []
-
-
+  let navigate = useNavigate()
+      let clients = [
+        {
+          firstName: "Alex k",
+          lastName: "kiborgok",
+          phoneNumber: "0703443334",
+          location: "Nairobi",
+          password: 12345,
+          isTrashPicker: false,
+          isAdmin: true
+        }
+      ]
 
     let initialstate = {
         firstName: "",
         lastName: "",
         phoneNumber: "",
         location: "",
-        password: "",
         confirmPassword: ""
     }
 
@@ -34,10 +42,35 @@ function App() {
             ...signUpData,
             [name]:value
         });
+        
     }
 
     let handleSubmit = (e) => {
         e.preventDefault();
+        if(signUpData.firstName === ""){
+          alert("First name cannot be empty")
+          return
+        }else if(signUpData.lastName === ""){
+          alert("Last name cannot be empty")
+          return
+        }else if(signUpData.phoneNumber === ""){
+          alert("Phone number cannot be empty")
+          return
+        }else if(signUpData.location === ""){
+          alert("Location cannot be empty")
+          return
+        }
+        else if(signUpData.password === ""){
+          alert("Password cannot empty")
+          return
+        }else if(signUpData.password.length < 5){
+          alert("Password too short")
+          return
+        }
+        else if(signUpData.password !== signUpData.confirmPassword){
+          alert("Passwords don't match")
+          return
+        }
         let usersLength = users.length;
         let newUser = signUpData;
         newUser.id = usersLength + 1;
@@ -45,6 +78,8 @@ function App() {
         newUser.password = hash
         setUsers([...users, newUser]);
         setSignUpData(initialstate);
+        alert("You successfully registered")
+        return navigate("/login")
     }
 
  
