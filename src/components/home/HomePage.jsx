@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import AboutPage from "../about/AboutPage";
 import Footer from "../footer/Footer";
+import ContactPage from "../contact/ContactPage";
 
 function HomePage() {
   return (
@@ -21,6 +22,7 @@ function HomePage() {
         </div>
       </section>
       <AboutPage />
+      <ContactPage />
       <Footer />
     </>
   );
