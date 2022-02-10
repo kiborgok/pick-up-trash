@@ -3,34 +3,30 @@ import "./signup.css";
 function SignUpPage(){
     return (
       <section className="back">
-        <div className="form-content">
-          <form className="form">
+          <form className="register-form">
             <h2>Signup Page</h2>
             <div className="form-inputs">
               <label htmlFor="username" className="form-label">
                 First Name:
               </label>
-              <br />
               <input
                 id="username"
                 type="text"
                 name="username"
                 className="form-input"
-                placeholder="Surname"
+                placeholder="First Name"
               />
             </div>
-            <br />
             <div className="form-inputs">
               <label htmlFor="username" className="form-label">
                 Last Name:
               </label>
-              <br />
               <input
                 id="username"
                 type="text"
                 name="username"
                 className="form-input"
-                placeholder="Lastname"
+                placeholder="Second Name"
               />
             </div>
             <br />
@@ -44,7 +40,7 @@ function SignUpPage(){
                 type="number"
                 name="number"
                 className="form-input"
-                placeholder="0722XXX XXX"
+                placeholder="0722 XXX XXX"
               />
             </div>
             <br />
@@ -58,6 +54,7 @@ function SignUpPage(){
                 type="password"
                 name="password"
                 className="form-input"
+                placeholder="********"
               />
             </div>
             <br />
@@ -71,6 +68,7 @@ function SignUpPage(){
                 type="password"
                 name="password2"
                 className="form-input"
+                placeholder="********"
               />
             </div>
             <br />
@@ -87,7 +85,6 @@ function SignUpPage(){
               </button>
             </span>
           </form>
-        </div>
       </section>
     );
 }
