@@ -6,13 +6,11 @@ function AccountPage() {
   return (
     
     <div className="container">
-        {/* <FontAwesomeIcon icon="fa-brands fa-github" /> */}
         <h2>Account Page:</h2>
         <div className="profile-photo">
-          {/* <img src={() => <} /> */}
         </div>
       <div class="Acc-form">
-        <form>
+        <form class="Accpg-form">
           <div className="name">
             <label>Name:</label>
             <input type="text" name="name" />
@@ -29,9 +27,8 @@ function AccountPage() {
             <label>Email:</label>
             <input type="text" name="Email" />
           </div>
-
-          {/* <button type="submit" class="btn">Submit</button> */}
         </form>
+        <button type="submit" class="btn">Submit</button>
       </div>
     </div>
   );
