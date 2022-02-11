@@ -13,34 +13,7 @@ import AccountPage from './components/account/AccountPage';
 
 function App() {
   let navigate = useNavigate()
-      let clients = [
-        {
-          firstName: "kipkoech",
-          lastName: "ian",
-          phoneNumber: "0797545676",
-          location: "machakos",
-          password: md5("12345"),
-          isTrashPicker: false,
-        },
-
-        {
-          firstName: "Joylene",
-          lastName: "kirui",
-          phoneNumber: "0719985678",
-          location: "nakuru",
-          password: md5("12345"),
-          isTrashPicker: false,
-        },
-
-        {
-          firstName: "collins",
-          lastName: "odinga",
-          phoneNumber: "0719545678",
-          location: "Nairobi",
-          password: md5("12345"),
-          isTrashPicker: false,
-        }
-      ]
+      let clients = []
 
     let initialstate = {
         firstName: "",
@@ -144,6 +117,7 @@ function App() {
         let newUser = signUpData;
         newUser.id = usersLength + 1;
         newUser.isAdmin = false;
+        newUser.isTrashPicker = false;
         if(newUser.lastName === "kiborgok"){
           newUser.isAdmin = true;
         }
