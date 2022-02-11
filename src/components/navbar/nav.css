@@ -45,3 +45,11 @@ nav {
 .register-btn:hover {
   background-color: #8785ff;
 }
+
+.log-out{
+  background-color: red;
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}

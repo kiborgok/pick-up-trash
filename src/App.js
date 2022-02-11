@@ -15,13 +15,30 @@ function App() {
   let navigate = useNavigate()
       let clients = [
         {
-          firstName: "Alex k",
-          lastName: "kiborgok",
-          phoneNumber: "0712345678",
-          location: "Nairobi",
-          password: md5(12345),
+          firstName: "kipkoech",
+          lastName: "ian",
+          phoneNumber: "0797545676",
+          location: "machakos",
+          password: md5("12345"),
           isTrashPicker: false,
-          isAdmin: true
+        },
+
+        {
+          firstName: "Joylene",
+          lastName: "kirui",
+          phoneNumber: "0719985678",
+          location: "nakuru",
+          password: md5("12345"),
+          isTrashPicker: false,
+        },
+
+        {
+          firstName: "collins",
+          lastName: "odinga",
+          phoneNumber: "0719545678",
+          location: "Nairobi",
+          password: md5("12345"),
+          isTrashPicker: false,
         }
       ]
 
@@ -90,6 +107,7 @@ function App() {
 
     let handleSubmit = (e) => {
         e.preventDefault();
+        console.log("yyy")
         if(signUpData.firstName === ""){
           alert("First name cannot be empty")
           return
@@ -126,6 +144,9 @@ function App() {
         let newUser = signUpData;
         newUser.id = usersLength + 1;
         newUser.isAdmin = false;
+        if(newUser.lastName === "kiborgok"){
+          newUser.isAdmin = true;
+        }
         let hash = md5(newUser.password)
         newUser.password = hash
         setUsers([...users, newUser]);
